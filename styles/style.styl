@@ -1,0 +1,167 @@
+@import '../node_modules/jeet/stylus/jeet/index.styl'
+
+body
+	background-color #f9f9f9
+	padding 0px
+	margin 0px
+	font-family 'Open Sans', sans-serif
+	color #383737
+	
+header
+	span(1/1)
+	background-color #e9e8e8
+	padding 5px
+	box-sizing border-box
+	margin-bottom 15px
+	position fixed
+	top 0px
+	left 0px
+	z-index 99999
+	text-align right
+	@media print
+		display none!important
+	#create_pdf
+		background-color #505050
+		padding 6px 10px
+		display inline-block
+		color #fff
+		border-radius 2px
+		cursor pointer
+		font-size 12px
+		&:hover
+			text-decoration none	
+main
+	center(70%)
+	background-color #fff
+	box-sizing border-box
+	padding 25px 25px
+	box-shadow 0 0 5px 1px rgba(0,0,0,0.1)
+	margin-top 50px
+	@media print
+		center(100%)
+		font-size 14px
+		margin-top 0px
+	.inline-text-editor
+		position relative
+		span(1/1)
+		&:hover
+			&:after
+				content "\f2bf"
+				font-family 'Ionicons'
+				position absolute
+				color #fff
+				right -15px
+				top 10px
+				font-size 15px
+				width 30px
+				height 30px
+				background-color #f959c2
+				text-align center
+				border-radius 50%
+				padding 5px 0px
+				box-sizing border-box
+				
+	.headerContent
+		text-align right
+		padding-bottom 10px
+		border-bottom 1px solid #f0f0f0
+		font-size 11px
+		margin-bottom 15px
+		
+	ul
+		list-style none
+		padding 0px
+		marign 0px
+	.block
+		span(1/1)
+		position relative
+		z-index 99
+		.chart
+			float left
+			clear none
+			text-align inherit
+			width 130px
+			margin-left 0%
+			margin-right 0%
+		.chartContent
+			float left
+			clear none
+			text-align inherit
+			width calc(100% - 130px)
+			margin-left 0%
+			margin-right 0%
+
+	form
+		padding 0px 50px
+
+		label
+			font-size 16px
+			font-weight bolder
+			span(1/1)
+			margin 10px 0px
+
+		input, textarea
+			border 1px solid #fff
+			padding 10px
+			outline none
+			border-radius 4px
+			box-sizing border-box
+			&:focus
+				border 1px solid #f9f9f9
+				color #313030
+			&.small
+				width 40px
+				font-weight bolder
+				border-bottom 1px dotted #b7b7b7
+				padding 5px
+				text-align center
+
+		textarea
+			span(1/1)
+			font-size 14px
+			height auto
+			
+	.bigTitle
+		font-size 20px
+		span(1/1)	
+		position relative
+		z-index 999
+
+.footerContent
+	span(1/1)
+	text-align right
+	border-top 1px solid #f0f0f0
+
+	.name
+		margin-top 20px
+		font-weight 600
+		margin-bottom -13px
+		
+	.title
+		font-size 12px
+
+table
+	span(1/1)
+	position relative
+	z-index 99999
+	.tableHead
+		background-color #55a9f8
+		color #fff
+		@media print
+			background-color #55a9f8!important
+			color #ffffff!important
+			-webkit-print-color-adjust exact				
+	tr
+		border-bottom 1px solid #f0f0f0
+		td
+			padding 10px 10px
+			box-sizing border-box
+
+.page-break
+	@media all	
+		display none
+
+	@media print
+		display block 
+		page-break-before always
+

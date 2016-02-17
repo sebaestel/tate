@@ -1,0 +1,15 @@
+{
+  "name": "tate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jeet": "^6.1.2",
+    "stylus": "^0.53.0"
+  }
+}
