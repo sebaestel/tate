@@ -34,7 +34,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/angular-inline-text-editor/ite.css">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="/styles/style.css">
 	<link rel="stylesheet" href="bower_components/ladda/dist/ladda-themeless.min.css">
 
 </head>
@@ -82,7 +82,7 @@
 				</p>
 				<p>
 					<strong>Gastos asociados a producción obra:</strong> La tarifa propuesta se refiere
-					exclusivamente a diseño o ejecución de las obras mencionadas y no comprende 
+					exclusivamente a diseño o ejecución de las obras mencionadas y no comprende
 					gastos por transporte (peaje, pasajes, hospedaje), arriendo de estudios
 					fotográficos, contratación de personal, ni compra de insumos o materiales. Todo
 					gasto ajeno a diseño o ejecución correrá por cuenta del cliente.
@@ -93,8 +93,8 @@
 					<thead>
 						<tr class="tableHead">
 							<td>Item</td>
-							<td>Valor(UF)</td> 
-							<td></td> 
+							<td>Valor(UF)</td>
+							<td></td>
 						</tr>
 					</thead>
 					<tbody>
@@ -138,7 +138,7 @@
 			<div inline-text-editor ng-model="contract" class="inline-text-editor" contentEditable> </div>
 
 			<label>6) VIGENCIA</label>
-			<p>	
+			<p>
 			La presente cotización tendrá una vigencia de <input type="text" ng-model="dateRange" class="small">semanas contadas a partir de la fecha indicada al comienzo del documento.
 			</p>
 
@@ -148,10 +148,16 @@
 				<textarea ng-model="signatureFirstLine" style="display:none;"></textarea>
 				<div inline-text-editor ng-model="signatureFirstLine" class="inline-text-editor name" contentEditable> </div>
 				<textarea ng-model="signatureSecondline" style="display:none;"></textarea>
-				<div inline-text-editor ng-model="signatureSecondline" class="inline-text-editor title" contentEditable> </div>	
+				<div inline-text-editor ng-model="signatureSecondline" class="inline-text-editor title" contentEditable> </div>
 			</div>
 		</div>
 	</main>
+
+	<footer>
+
+		Basado en el modelo de cotización formal de <a href="http://www.grafiscopio.com" target="blank_">grafiscopio.com</a> | Diseño y desarrollo <a href="http://www.grafiscopio.com" target="blank_">sebaduran.com</a><br/>
+		<small>Este sitio no tiene ninguna relacion directa con el equipo de Grafiscopio</small>
+	</footer>
 </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
